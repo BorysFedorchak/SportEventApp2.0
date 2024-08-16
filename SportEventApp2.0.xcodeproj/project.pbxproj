@@ -13,7 +13,23 @@
 		C4AFD8A12C68F5F800DB6225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AFD8A02C68F5F800DB6225 /* Assets.xcassets */; };
 		C4AFD8A42C68F5F800DB6225 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4AFD8A32C68F5F800DB6225 /* Base */; };
 		C4AFD8AC2C68F61A00DB6225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AFD8AB2C68F61A00DB6225 /* Main.storyboard */; };
+		C4AFD8B32C6CF9D700DB6225 /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AFD8B22C6CF9D700DB6225 /* SingUpVC.swift */; };
+		C4AFD8BA2C6D2B0500DB6225 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C4AFD8B92C6D2B0500DB6225 /* SnapKit */; };
+		C4AFD8C22C6F8A9300DB6225 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AFD8C12C6F8A9300DB6225 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C4AFD8BE2C6D2F4C00DB6225 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C4AFD8942C68F5F700DB6225 /* SportEventApp2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportEventApp2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,8 @@
 		C4AFD8A32C68F5F800DB6225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4AFD8A52C68F5F800DB6225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4AFD8AB2C68F61A00DB6225 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C4AFD8B22C6CF9D700DB6225 /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
+		C4AFD8C12C6F8A9300DB6225 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AFD8BA2C6D2B0500DB6225 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +78,22 @@
 				C4AFD8972C68F5F700DB6225 /* AppDelegate.swift */,
 				C4AFD8992C68F5F700DB6225 /* SceneDelegate.swift */,
 				C4AFD89B2C68F5F700DB6225 /* ViewController.swift */,
+				C4AFD8B42C6CF9DF00DB6225 /* VC */,
 				C4AFD8AB2C68F61A00DB6225 /* Main.storyboard */,
 				C4AFD8A02C68F5F800DB6225 /* Assets.xcassets */,
 				C4AFD8A22C68F5F800DB6225 /* LaunchScreen.storyboard */,
 				C4AFD8A52C68F5F800DB6225 /* Info.plist */,
 			);
 			path = SportEventApp2.0;
+			sourceTree = "<group>";
+		};
+		C4AFD8B42C6CF9DF00DB6225 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C4AFD8B22C6CF9D700DB6225 /* SingUpVC.swift */,
+				C4AFD8C12C6F8A9300DB6225 /* HomeVC.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +106,16 @@
 				C4AFD8902C68F5F700DB6225 /* Sources */,
 				C4AFD8912C68F5F700DB6225 /* Frameworks */,
 				C4AFD8922C68F5F700DB6225 /* Resources */,
+				C4AFD8BE2C6D2F4C00DB6225 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SportEventApp2.0;
+			packageProductDependencies = (
+				C4AFD8B92C6D2B0500DB6225 /* SnapKit */,
+			);
 			productName = SportEventApp2.0;
 			productReference = C4AFD8942C68F5F700DB6225 /* SportEventApp2.0.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +144,9 @@
 				Base,
 			);
 			mainGroup = C4AFD88B2C68F5F700DB6225;
+			packageReferences = (
+				C4AFD8B82C6D2B0500DB6225 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C4AFD8952C68F5F700DB6225 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AFD8B32C6CF9D700DB6225 /* SingUpVC.swift in Sources */,
 				C4AFD89C2C68F5F700DB6225 /* ViewController.swift in Sources */,
+				C4AFD8C22C6F8A9300DB6225 /* HomeVC.swift in Sources */,
 				C4AFD8982C68F5F700DB6225 /* AppDelegate.swift in Sources */,
 				C4AFD89A2C68F5F700DB6225 /* SceneDelegate.swift in Sources */,
 			);
@@ -355,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4AFD8B82C6D2B0500DB6225 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4AFD8B92C6D2B0500DB6225 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4AFD8B82C6D2B0500DB6225 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4AFD88C2C68F5F700DB6225 /* Project object */;
 }
