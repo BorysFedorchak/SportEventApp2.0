@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C457B18F2C7623BE00F195F8 /* HomeEventsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C457B18E2C7623BE00F195F8 /* HomeEventsTVC.xib */; };
+		C457B1912C7623D200F195F8 /* HomeEventsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B1902C7623D200F195F8 /* HomeEventsTVC.swift */; };
+		C457B1952C76287700F195F8 /* HomeEventsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B1942C76287700F195F8 /* HomeEventsCVC.swift */; };
+		C457B1972C76287E00F195F8 /* HomeEventsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C457B1962C76287E00F195F8 /* HomeEventsCVC.xib */; };
+		C457B19A2C7659DA00F195F8 /* HomeTextTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C457B1992C7659DA00F195F8 /* HomeTextTVC.xib */; };
+		C457B19C2C7659ED00F195F8 /* HomeTextTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B19B2C7659ED00F195F8 /* HomeTextTVC.swift */; };
 		C4AFD8982C68F5F700DB6225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AFD8972C68F5F700DB6225 /* AppDelegate.swift */; };
 		C4AFD89A2C68F5F700DB6225 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AFD8992C68F5F700DB6225 /* SceneDelegate.swift */; };
 		C4AFD89C2C68F5F700DB6225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AFD89B2C68F5F700DB6225 /* ViewController.swift */; };
@@ -39,6 +45,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C457B18E2C7623BE00F195F8 /* HomeEventsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEventsTVC.xib; sourceTree = "<group>"; };
+		C457B1902C7623D200F195F8 /* HomeEventsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventsTVC.swift; sourceTree = "<group>"; };
+		C457B1942C76287700F195F8 /* HomeEventsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventsCVC.swift; sourceTree = "<group>"; };
+		C457B1962C76287E00F195F8 /* HomeEventsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEventsCVC.xib; sourceTree = "<group>"; };
+		C457B1992C7659DA00F195F8 /* HomeTextTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTextTVC.xib; sourceTree = "<group>"; };
+		C457B19B2C7659ED00F195F8 /* HomeTextTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTextTVC.swift; sourceTree = "<group>"; };
 		C4AFD8942C68F5F700DB6225 /* SportEventApp2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportEventApp2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AFD8972C68F5F700DB6225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4AFD8992C68F5F700DB6225 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +82,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C457B18D2C76232600F195F8 /* HomeEvents */ = {
+			isa = PBXGroup;
+			children = (
+				C457B18E2C7623BE00F195F8 /* HomeEventsTVC.xib */,
+				C457B1902C7623D200F195F8 /* HomeEventsTVC.swift */,
+			);
+			path = HomeEvents;
+			sourceTree = "<group>";
+		};
+		C457B1922C76284000F195F8 /* HomeCVC */ = {
+			isa = PBXGroup;
+			children = (
+				C4AFD8D42C7240C000DB6225 /* HomeCVC.xib */,
+				C4AFD8D62C7240E800DB6225 /* HomeCVC.swift */,
+			);
+			path = HomeCVC;
+			sourceTree = "<group>";
+		};
+		C457B1932C76285200F195F8 /* HomeEventsCVC */ = {
+			isa = PBXGroup;
+			children = (
+				C457B1962C76287E00F195F8 /* HomeEventsCVC.xib */,
+				C457B1942C76287700F195F8 /* HomeEventsCVC.swift */,
+			);
+			path = HomeEventsCVC;
+			sourceTree = "<group>";
+		};
+		C457B1982C76597A00F195F8 /* HomeText */ = {
+			isa = PBXGroup;
+			children = (
+				C457B1992C7659DA00F195F8 /* HomeTextTVC.xib */,
+				C457B19B2C7659ED00F195F8 /* HomeTextTVC.swift */,
+			);
+			path = HomeText;
+			sourceTree = "<group>";
+		};
 		C4AFD88B2C68F5F700DB6225 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +165,8 @@
 			children = (
 				C4AFD8CA2C723C8100DB6225 /* HomeImage */,
 				C4AFD8CB2C723C9600DB6225 /* HomeCollection */,
+				C457B1982C76597A00F195F8 /* HomeText */,
+				C457B18D2C76232600F195F8 /* HomeEvents */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -151,8 +201,8 @@
 		C4AFD8D32C72409B00DB6225 /* CVC */ = {
 			isa = PBXGroup;
 			children = (
-				C4AFD8D42C7240C000DB6225 /* HomeCVC.xib */,
-				C4AFD8D62C7240E800DB6225 /* HomeCVC.swift */,
+				C457B1922C76284000F195F8 /* HomeCVC */,
+				C457B1932C76285200F195F8 /* HomeEventsCVC */,
 			);
 			path = CVC;
 			sourceTree = "<group>";
@@ -226,8 +276,11 @@
 				C4AFD8A42C68F5F800DB6225 /* Base in Resources */,
 				C4AFD8AC2C68F61A00DB6225 /* Main.storyboard in Resources */,
 				C4AFD8CD2C723CBD00DB6225 /* HomeCollectionTVC.xib in Resources */,
+				C457B1972C76287E00F195F8 /* HomeEventsCVC.xib in Resources */,
 				C4AFD8C72C722CDE00DB6225 /* HomeImageTVC.xib in Resources */,
+				C457B18F2C7623BE00F195F8 /* HomeEventsTVC.xib in Resources */,
 				C4AFD8D52C7240C000DB6225 /* HomeCVC.xib in Resources */,
+				C457B19A2C7659DA00F195F8 /* HomeTextTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,12 +294,15 @@
 				C4AFD8B32C6CF9D700DB6225 /* SingUpVC.swift in Sources */,
 				C4AFD89C2C68F5F700DB6225 /* ViewController.swift in Sources */,
 				C4AFD8C22C6F8A9300DB6225 /* HomeVC.swift in Sources */,
+				C457B1912C7623D200F195F8 /* HomeEventsTVC.swift in Sources */,
 				C4AFD8C92C722CF200DB6225 /* HomeImageTVC.swift in Sources */,
 				C4AFD8DB2C724B2E00DB6225 /* Extensions.swift in Sources */,
+				C457B1952C76287700F195F8 /* HomeEventsCVC.swift in Sources */,
 				C4AFD8982C68F5F700DB6225 /* AppDelegate.swift in Sources */,
 				C4AFD8D72C7240E800DB6225 /* HomeCVC.swift in Sources */,
 				C4AFD89A2C68F5F700DB6225 /* SceneDelegate.swift in Sources */,
 				C4AFD8CF2C723CDD00DB6225 /* HomeCollectionTVC.swift in Sources */,
+				C457B19C2C7659ED00F195F8 /* HomeTextTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

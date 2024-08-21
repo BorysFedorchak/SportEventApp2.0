@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="277" id="k0T-K0-5d8" customClass="HomeEventsTVC" customModule="SportEventApp2_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="557" height="360"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k0T-K0-5d8" id="Ef2-x2-aWj">
+                <rect key="frame" x="0.0" y="0.0" width="557" height="360"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="VqD-tF-WwA">
+                        <rect key="frame" x="0.0" y="-9" width="557" height="378"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="USQ-ls-ZQt">
+                            <size key="itemSize" width="450" height="163"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VqD-tF-WwA" firstAttribute="top" secondItem="Ef2-x2-aWj" secondAttribute="topMargin" constant="-20" id="C19-C0-LNN"/>
+                    <constraint firstItem="VqD-tF-WwA" firstAttribute="bottom" secondItem="Ef2-x2-aWj" secondAttribute="bottomMargin" constant="20" id="Rk7-ZA-78K"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VqD-tF-WwA" secondAttribute="trailing" constant="-20" id="up0-wO-wjC"/>
+                    <constraint firstItem="VqD-tF-WwA" firstAttribute="leading" secondItem="Ef2-x2-aWj" secondAttribute="leadingMargin" constant="-20" id="zzs-61-IZB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="EventsCollectionView" destination="VqD-tF-WwA" id="a3Z-fG-kF5"/>
+            </connections>
+            <point key="canvasLocation" x="46.564885496183201" y="15.140845070422536"/>
+        </tableViewCell>
+    </objects>
+</document>

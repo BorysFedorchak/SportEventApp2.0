@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="60" id="J1D-Fi-3k8" customClass="HomeTextTVC" customModule="SportEventApp2_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="501" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J1D-Fi-3k8" id="QQo-EQ-Gj8">
+                <rect key="frame" x="0.0" y="0.0" width="501" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PV3-Rk-bOx">
+                        <rect key="frame" x="0.0" y="0.0" width="117.33333333333333" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all  &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBX-ke-3cH">
+                        <rect key="frame" x="432" y="0.0" width="69" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="PV3-Rk-bOx" firstAttribute="top" secondItem="QQo-EQ-Gj8" secondAttribute="top" id="24b-pb-TaC"/>
+                    <constraint firstAttribute="bottom" secondItem="yBX-ke-3cH" secondAttribute="bottom" id="2bT-vb-x9R"/>
+                    <constraint firstAttribute="bottom" secondItem="PV3-Rk-bOx" secondAttribute="bottom" id="Nqi-n4-gut"/>
+                    <constraint firstItem="yBX-ke-3cH" firstAttribute="top" secondItem="QQo-EQ-Gj8" secondAttribute="top" id="X3o-fe-IHt"/>
+                    <constraint firstItem="PV3-Rk-bOx" firstAttribute="leading" secondItem="QQo-EQ-Gj8" secondAttribute="leading" id="lLY-KO-DG4"/>
+                    <constraint firstAttribute="trailing" secondItem="yBX-ke-3cH" secondAttribute="trailing" id="z7X-sF-uVU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="TextLeft" destination="PV3-Rk-bOx" id="ChP-W9-Ufe"/>
+                <outlet property="TextRight" destination="yBX-ke-3cH" id="rxg-uN-CWH"/>
+            </connections>
+            <point key="canvasLocation" x="257.25190839694653" y="-33.802816901408455"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -17,14 +17,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUh-7F-Na3">
-                        <rect key="frame" x="4" y="104" width="120" height="21"/>
+                        <rect key="frame" x="4" y="92.666666666666671" width="120" height="20.333333333333329"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-eK-vYb">
-                        <rect key="frame" x="4" y="4" width="120" height="80"/>
+                        <rect key="frame" x="4" y="4" width="120" height="80.666666666666671"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
                 </subviews>
@@ -32,10 +32,10 @@
                     <constraint firstAttribute="trailing" secondItem="3dM-eK-vYb" secondAttribute="trailing" constant="4" id="0fZ-vS-Fqo"/>
                     <constraint firstItem="cUh-7F-Na3" firstAttribute="leading" secondItem="GRG-tI-zIi" secondAttribute="leading" constant="4" id="Idp-uz-dfr"/>
                     <constraint firstAttribute="trailing" secondItem="cUh-7F-Na3" secondAttribute="trailing" constant="4" id="Kui-bl-anD"/>
-                    <constraint firstItem="cUh-7F-Na3" firstAttribute="top" secondItem="3dM-eK-vYb" secondAttribute="bottom" constant="20" id="L5S-dC-R8i"/>
+                    <constraint firstItem="cUh-7F-Na3" firstAttribute="top" secondItem="3dM-eK-vYb" secondAttribute="bottom" constant="8" id="L5S-dC-R8i"/>
                     <constraint firstItem="3dM-eK-vYb" firstAttribute="top" secondItem="GRG-tI-zIi" secondAttribute="top" constant="4" id="XAl-L7-TZV"/>
                     <constraint firstItem="3dM-eK-vYb" firstAttribute="leading" secondItem="GRG-tI-zIi" secondAttribute="leading" constant="4" id="n8S-s8-WIj"/>
-                    <constraint firstAttribute="bottom" secondItem="cUh-7F-Na3" secondAttribute="bottom" constant="4" id="vYh-m7-mc9"/>
+                    <constraint firstAttribute="bottom" secondItem="cUh-7F-Na3" secondAttribute="bottom" constant="16" id="vYh-m7-mc9"/>
                 </constraints>
             </collectionViewCellContentView>
             <color key="backgroundColor" red="0.1176470518" green="0.18823529780000001" blue="0.2941176593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
