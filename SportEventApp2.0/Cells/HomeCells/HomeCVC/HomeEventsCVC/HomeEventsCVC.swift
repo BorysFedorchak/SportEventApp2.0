@@ -8,7 +8,11 @@
 import Foundation
 import UIKit
 
+// MARK: - HomeEventsCVC
+
 class HomeEventsCVC: UICollectionViewCell {
+    
+    // MARK: - Outlets
     
     @IBOutlet weak var EventsFirstImage: UIImageView!
     @IBOutlet weak var EventsFirstLabel: UILabel!
@@ -18,7 +22,7 @@ class HomeEventsCVC: UICollectionViewCell {
     
     @IBOutlet weak var EventsCenterLabel: UILabel!
     
-    
+    // MARK: - Properties
     
     let identifier = HomeEventsCVC.identifier()
     let nib = HomeEventsCVC.nib()

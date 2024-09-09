@@ -8,15 +8,17 @@
 import Foundation
 import UIKit
 
+// MARK: - HomeTextTVC
+
 class HomeTextTVC: UITableViewCell{
+    
+    // MARK: - Outlets
     
     @IBOutlet weak var TextLeft: UILabel!
     @IBOutlet weak var TextRight: UILabel!
     
+    // MARK: - Properties
+    
     let identifier = HomeTextTVC.identifier()
     let nib = HomeTextTVC.nib()
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
 }

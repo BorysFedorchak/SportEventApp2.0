@@ -9,10 +9,15 @@ import Foundation
 import UIKit
 import SnapKit
 
+// MARK: - PBackImageTVC
 
 class PBackImageTVC: UITableViewCell {
     
+    // MARK: - Properties
+    
     let identifier = PBackImageTVC.identifier()
+    
+    // MARK: - Initializers
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -26,14 +31,22 @@ class PBackImageTVC: UITableViewCell {
     
 }
 
+// MARK: - Setup Methods
+
 extension PBackImageTVC {
     
     private func setupView() {
         
+        // MARK: - Content View Configuration
+        
         contentView.backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1.00)
         
-        let pBackImage = UIImageView(image: UIImage(named: "ronaldo"))
-        contentView.addSubview(pBackImage)
+        // MARK: - Background Image
+        
+        let backImage = UIImageView(image: UIImage(named: "ronaldo"))
+        contentView.addSubview(backImage)
+        
+        // MARK: - Share Button
         
         let shareButton = UIButton(type: .system)
         shareButton.setImage(UIImage(systemName: "arrowshape.turn.up.right"), for: .normal)
@@ -43,6 +56,8 @@ extension PBackImageTVC {
         shareButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         contentView.addSubview(shareButton)
         
+        // MARK: - Save Button
+        
         let saveButton = UIButton(type: .system)
         saveButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
         saveButton.backgroundColor = .lightGray
@@ -51,7 +66,7 @@ extension PBackImageTVC {
         saveButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         contentView.addSubview(saveButton)
         
-        pBackImage.snp.makeConstraints {
+        backImage.snp.makeConstraints {
             $0.top.equalToSuperview()
             $0.leading.trailing.top.equalToSuperview()
             $0.height.equalTo(750)
@@ -59,61 +74,66 @@ extension PBackImageTVC {
         shareButton .snp.makeConstraints {
             $0.top.equalToSuperview().inset(20)
             $0.trailing.equalTo(saveButton).inset(52)
-            $0.bottom.equalTo(pBackImage.snp.top)
+            $0.bottom.equalTo(backImage.snp.top)
             $0.height.width.equalTo(40)
         }
         
         saveButton .snp.makeConstraints {
             $0.top.equalToSuperview().inset(20)
             $0.trailing.equalToSuperview().inset(20)
-            $0.bottom.equalTo(pBackImage.snp.top)
+            $0.bottom.equalTo(backImage.snp.top)
             $0.height.width.equalTo(40)
         }
         
-        let pStackView = UIStackView(arrangedSubviews: ["Age", "Games", "Goals"].map { titleText in
+        // MARK: - Statistics Stack View
+        
+        let stackView = UIStackView(arrangedSubviews: ["Age", "Games", "Goals"].map { titleText in
             
-            let pView = UIView()
-            pView.backgroundColor = .darkGray
-            pView.layer.cornerRadius = 10
-            pView.alpha = 0.9
+            let view = UIView()
+            view.backgroundColor = .darkGray
+            view.layer.cornerRadius = 10
+            view.alpha = 0.9
             
-            let pTitle = UILabel()
-            pTitle.text = titleText
-            pTitle.textColor = .white
-            pView.addSubview(pTitle)
+            let title = UILabel()
+            title.text = titleText
+            title.textColor = .white
+            view.addSubview(title)
             
-            let pCount = UILabel()
-            pCount.textColor = .white
-            pCount.font = .boldSystemFont(ofSize: 24)
-            pCount.textAlignment = .right
-            pView.addSubview(pCount)
+            let count = UILabel()
+            count.textColor = .white
+            count.font = .boldSystemFont(ofSize: 24)
+            count.textAlignment = .right
+            view.addSubview(count)
             
-            pTitle.snp.makeConstraints {
+            title.snp.makeConstraints {
                 $0.leading.trailing.top.equalToSuperview().inset(16)
             }
             
-            pCount.snp.makeConstraints {
+            count.snp.makeConstraints {
                 $0.trailing.bottom.leading.equalToSuperview().inset(16)
             }
             
-            return pView
+            return view
         })
         let element = [39, 196, 118]
         
-        pStackView.arrangedSubviews.enumerated().forEach { (index, view) in
+        stackView.arrangedSubviews.enumerated().forEach { (index, view) in
             (view.subviews.last as? UILabel)?.text = element[index].description
         }
-        pStackView.axis = .horizontal
-        pStackView.spacing = 12
-        pStackView.distribution = .fillEqually
-        contentView.addSubview(pStackView)
+        stackView.axis = .horizontal
+        stackView.spacing = 12
+        stackView.distribution = .fillEqually
+        contentView.addSubview(stackView)
         
-        pStackView.snp.makeConstraints {
+        stackView.snp.makeConstraints {
             $0.bottom.equalToSuperview()
             $0.leading.trailing.equalToSuperview().inset(8)
             $0.height.equalTo(128)
         }
     }
+    
+    // MARK: - Button Action
+    
     @objc
     func buttonTapped(){
         print("buttonTapped")

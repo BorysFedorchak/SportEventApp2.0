@@ -8,14 +8,18 @@
 import Foundation
 import UIKit
 
+// MARK: - HomeVC
+
 class HomeVC: UIViewController {
     
+    // MARK: - Outlets
     
     @IBOutlet weak var HomeLabel: UILabel!
     @IBOutlet weak var HomeStackView: UIStackView!
     
     @IBOutlet weak var HomeTableView: UITableView!
     
+    // MARK: - viewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +34,8 @@ class HomeVC: UIViewController {
         HomeTableView.backgroundColor = .clear
     }
 }
+
+// MARK: - UITableViewDelegate & UITableViewDataSource
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     

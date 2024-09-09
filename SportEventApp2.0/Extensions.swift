@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// MARK: - UITableViewCell
+
 extension UITableViewCell {
     static func identifier() -> String {
         return String(describing: self)
@@ -17,6 +19,8 @@ extension UITableViewCell {
         return UINib(nibName: identifier(), bundle: nil)
     }
 }
+
+// MARK: - UICollectionViewCell
 
 extension UICollectionViewCell {
     static func identifier() -> String {

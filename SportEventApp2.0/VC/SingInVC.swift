@@ -9,24 +9,34 @@ import Foundation
 import UIKit
 import SnapKit
 
+// MARK: - SingInVC
+
 class SingInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // MARK: - Back Image
+        
         let backImage = UIImageView(image: UIImage(named: "backImage"))
         view.addSubview(backImage)
+        
+        // MARK: - Form View
         
         let formView = UIView()
         formView.backgroundColor = UIColor(red: 0.04, green: 0.14, blue: 0.25, alpha: 1.00)
         formView.layer.cornerRadius = 16
         view.addSubview(formView)
         
+        // MARK: - Title Label
+        
         let titleLabel = UILabel()
         titleLabel.text = "Welcome"
         titleLabel.font = UIFont.systemFont(ofSize: 36, weight: .bold)
         titleLabel.textColor = .white
         formView.addSubview(titleLabel)
+        
+        // MARK: - Text Fields
         
         let array: [(UIImage, String, UITextContentType)] = [
             (UIImage(systemName: "envelope")!, "Email or username", .emailAddress),
@@ -102,11 +112,15 @@ class SingInVC: UIViewController {
         stackView.spacing = 16
         formView.addSubview(stackView)
         
+        // MARK: - Forgot Password Button
+        
         let forgotPasswordButton = UIButton(type: .system)
         forgotPasswordButton.setTitle("Forgot password?", for: .normal)
         forgotPasswordButton.setTitleColor(UIColor(red: 0.44, green: 0.58, blue: 0.85, alpha: 1.00), for: .normal)
         forgotPasswordButton.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
         formView.addSubview(forgotPasswordButton)
+        
+        // MARK: - Sign In Button
         
         let button = UIButton(type: .system)
         button.setTitle("Sign In", for: .normal)
@@ -116,6 +130,8 @@ class SingInVC: UIViewController {
         button.layer.cornerCurve = .continuous
         button.addTarget(self, action: #selector(nextHomeVC), for: .touchUpInside)
         formView.addSubview(button)
+        
+        // MARK: - Sign Up Button
         
         let DSingUpButton = UIButton(type: .system)
         DSingUpButton.setTitle("Don't have an Account? Sing Up", for: .normal)
@@ -161,6 +177,7 @@ class SingInVC: UIViewController {
         }
     }
     
+    // MARK: - Toggle Password Visibility
     
     @objc
     func togglePasswordVisibility(_ sender: UIButton) {
@@ -170,6 +187,8 @@ class SingInVC: UIViewController {
             sender.setImage(buttonImage, for: .normal)
         }
     }
+    
+    // MARK: - Navigation
     
     @objc
     func nextHomeVC() {

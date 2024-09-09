@@ -41,7 +41,7 @@
             <connections>
                 <outlet property="HTVCCollectionView" destination="9g6-4T-dsj" id="5Eg-SE-lYY"/>
             </connections>
-            <point key="canvasLocation" x="374" y="25"/>
+            <point key="canvasLocation" x="160" y="15"/>
         </tableViewCell>
     </objects>
 </document>

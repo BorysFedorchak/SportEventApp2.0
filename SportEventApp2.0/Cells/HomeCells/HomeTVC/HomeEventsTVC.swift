@@ -8,13 +8,21 @@
 import Foundation
 import UIKit
 
+//MARK: - Data
+
 var eventsTeamName: [String] = ["Barcelona", "RealMadrid", "PSG", "Liverpool"]
 var eventsTeamImage: [UIImage] = [.barcelona, .realMadrid, .PSG, .liverpool]
 var eventsResult: [String] = ["3   -   4", "2   -   0"]
 
+// MARK: - HomeEventsTVC
+
 class HomeEventsTVC: UITableViewCell {
     
+    // MARK: - Outlets
+    
     @IBOutlet weak var EventsCollectionView: UICollectionView!
+    
+    // MARK: - Initialization
     
     let identifier = HomeEventsTVC.identifier()
     let nib = HomeEventsTVC.nib()
@@ -28,6 +36,8 @@ class HomeEventsTVC: UITableViewCell {
         EventsCollectionView.register(HomeEventsCVC.nib(), forCellWithReuseIdentifier: HomeEventsCVC.identifier())
     }
 }
+
+// MARK: - UICollectionViewDelegate & DataSource
 
 extension HomeEventsTVC: UICollectionViewDelegate, UICollectionViewDataSource {
     

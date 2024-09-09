@@ -8,12 +8,20 @@
 import Foundation
 import UIKit
 
+//MARK: - Data 
+
 var sports: [String] = ["Soccer", "Basketball", "Football", "Baseball", "Tennis", "Volleyball", "Golf"]
 var sportsImage: [UIImage] = [.soccerBall, .basketball, .americanFootball, .baseball, .tennis, .volleyball, .golf]
 
+// MARK: - HomeCollectionTVC
+
 class HomeCollectionTVC: UITableViewCell {
   
+    // MARK: - Outlets
+    
     @IBOutlet weak var HTVCCollectionView: UICollectionView!
+    
+    // MARK: - Initialization
     
     let identifier = HomeCollectionTVC.identifier()
     let nib = HomeCollectionTVC.nib()
@@ -27,6 +35,8 @@ class HomeCollectionTVC: UITableViewCell {
         HTVCCollectionView.register(HomeCVC.nib(), forCellWithReuseIdentifier: HomeCVC.identifier())
     }
 }
+
+// MARK: - UICollectionViewDelegate & DataSource
 
 extension HomeCollectionTVC: UICollectionViewDelegate, UICollectionViewDataSource {
     

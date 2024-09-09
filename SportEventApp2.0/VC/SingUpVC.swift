@@ -9,7 +9,11 @@ import Foundation
 import UIKit
 import SnapKit
 
+// MARK: - SingUpVC
+
 class SingUpVC: UIViewController {
+    
+    // MARK: - Outlets
     
     @IBOutlet weak var SUpImageView: UIImageView!
     
@@ -25,6 +29,7 @@ class SingUpVC: UIViewController {
 
     @IBOutlet weak var LogInButton: UIButton!
     
+    // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,14 +45,13 @@ class SingUpVC: UIViewController {
         let passwordImage = UIImage(systemName: "lock")
         addLeftImage(textField: SUpPasswordTF, image: passwordImage!)
         
-//        let eyeSlashImage = UIImage(systemName: "eye.slash")
-//        addRightImage(textField: SUpPasswordTF, image: eyeSlashImage!)
-        
         SUpNameTF.configureTF()
         SUpEmailTF.configureTF()
         SUpPasswordTF.configureTF()
         
     }
+    
+    // MARK: - Methods
     
     func addLeftImage(textField: UITextField, image: UIImage) {
         let padding = 16
@@ -59,17 +63,6 @@ class SingUpVC: UIViewController {
         textField.leftView = outerView
         textField.leftViewMode = .always
     }
-    
-//    func addRightImage(textField: UITextField, image: UIImage) {
-//        let padding = 16
-//        let outerView2 = UIView(frame: CGRect(x: 0, y: 0, width: image.size.width + CGFloat(padding), height: image.size.height) )
-//        let rightImageView = UIImageView(frame: CGRect(x: CGFloat(padding), y: 0.0, width: image.size.width, height: image.size.height))
-//        rightImageView.image = image
-//        rightImageView.tintColor = UIColor(red: 0.27, green: 0.35, blue: 0.49, alpha: 1.00)
-//        outerView2.addSubview(rightImageView)
-//        textField.rightView = outerView2
-//        textField.rightViewMode = .always
-//    }
     
     @objc
     func nextSingInVC() {
@@ -84,6 +77,8 @@ class SingUpVC: UIViewController {
     
 }
 
+// MARK: - UITextField Extension
+
 extension UITextField {
     func configureTF() {
         layer.borderWidth = 1
@@ -92,4 +87,3 @@ extension UITextField {
         clipsToBounds = true
     }
 }
-
