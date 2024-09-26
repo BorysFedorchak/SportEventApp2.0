@@ -22,27 +22,17 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all  &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBX-ke-3cH">
-                        <rect key="frame" x="432" y="0.0" width="69" height="60"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="PV3-Rk-bOx" firstAttribute="top" secondItem="QQo-EQ-Gj8" secondAttribute="top" id="24b-pb-TaC"/>
-                    <constraint firstAttribute="bottom" secondItem="yBX-ke-3cH" secondAttribute="bottom" id="2bT-vb-x9R"/>
                     <constraint firstAttribute="bottom" secondItem="PV3-Rk-bOx" secondAttribute="bottom" id="Nqi-n4-gut"/>
-                    <constraint firstItem="yBX-ke-3cH" firstAttribute="top" secondItem="QQo-EQ-Gj8" secondAttribute="top" id="X3o-fe-IHt"/>
                     <constraint firstItem="PV3-Rk-bOx" firstAttribute="leading" secondItem="QQo-EQ-Gj8" secondAttribute="leading" id="lLY-KO-DG4"/>
-                    <constraint firstAttribute="trailing" secondItem="yBX-ke-3cH" secondAttribute="trailing" id="z7X-sF-uVU"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="TextLeft" destination="PV3-Rk-bOx" id="ChP-W9-Ufe"/>
-                <outlet property="TextRight" destination="yBX-ke-3cH" id="rxg-uN-CWH"/>
             </connections>
             <point key="canvasLocation" x="257.25190839694653" y="-33.802816901408455"/>
         </tableViewCell>

@@ -13,6 +13,8 @@ import SnapKit
 
 class SingInVC: UIViewController {
     
+    var stackView: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,7 +45,7 @@ class SingInVC: UIViewController {
             (UIImage(systemName: "lock")!, "Password", .password)
         ]
         
-        let stackView = UIStackView(arrangedSubviews: array.map({ item in
+        stackView = UIStackView(arrangedSubviews: array.map({ item in
             let textField = UITextField()
             textField.attributedPlaceholder = NSAttributedString(
                 string: item.1,
@@ -190,14 +192,30 @@ class SingInVC: UIViewController {
     
     // MARK: - Navigation
     
+    // MARK: - Navigation
+
     @objc
     func nextHomeVC() {
-        if let existingVC = navigationController?.viewControllers.first(where: { $0 is HomeVC }) {
-            navigationController?.popToViewController(existingVC, animated: true)
+        guard let nameOrEmail = (stackView.arrangedSubviews[0] as? UITextField)?.text,
+              let password = (stackView.arrangedSubviews[1] as? UITextField)?.text else {
+            print("Введіть ім'я/email та пароль")
+            return
+        }
+        
+        let coreDataService = CoreDataService()
+        
+        if let user = coreDataService.authenticateUser(withNameOrEmail: nameOrEmail, andPassword: password) {
+            print("Вхід успішний для користувача: \(user.name ?? "")")
+            
+            if let existingVC = navigationController?.viewControllers.first(where: { $0 is HomeVC }) {
+                navigationController?.popToViewController(existingVC, animated: true)
+            } else {
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let nextViewController = storyBoard.instantiateViewController(withIdentifier: "homeID") as! HomeVC
+                self.navigationController?.pushViewController(nextViewController, animated: true)
+            }
         } else {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "homeID") as! HomeVC
-            self.navigationController?.pushViewController(nextViewController, animated: true)
+            print("Невірне ім'я/email або пароль")
         }
     }
     

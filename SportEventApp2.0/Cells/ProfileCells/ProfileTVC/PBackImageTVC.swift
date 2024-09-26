@@ -135,7 +135,7 @@ extension PBackImageTVC {
     // MARK: - Button Action
     
     @objc
-    func buttonTapped(){
+    func buttonTapped() {
         print("buttonTapped")
     }
 }

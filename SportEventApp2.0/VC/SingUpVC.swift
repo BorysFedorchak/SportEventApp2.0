@@ -28,7 +28,9 @@ class SingUpVC: UIViewController {
     @IBOutlet weak var SUpPasswordTF: UITextField!
 
     @IBOutlet weak var LogInButton: UIButton!
-    
+    @IBAction func signUpButtonTapped(_ sender: UIButton) {
+        setupCD()
+    }
     // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +50,23 @@ class SingUpVC: UIViewController {
         SUpNameTF.configureTF()
         SUpEmailTF.configureTF()
         SUpPasswordTF.configureTF()
+        SUpPasswordTF.textContentType = .oneTimeCode
+        SUpPasswordTF.isSecureTextEntry = true
+    }
+    
+    private func setupCD() {
+        let service = CoreDataService()
         
+        guard let name = SUpNameTF.text, !name.isEmpty,
+              let email = SUpEmailTF.text, !email.isEmpty,
+              let password = SUpPasswordTF.text, !password.isEmpty else {
+            return
+        }
+        
+        service.saveNewUser(name: name, email: email, password: password)
+        print("-------------😀---------------")
+        service.getUsers().forEach { print($0) }
+        print("-------------😀---------------")
     }
     
     // MARK: - Methods
@@ -66,6 +84,7 @@ class SingUpVC: UIViewController {
     
     @objc
     func nextSingInVC() {
+        
         if let existingVC = navigationController?.viewControllers.first(where: { $0 is SingInVC }) {
             navigationController?.popToViewController(existingVC, animated: true)
         } else {

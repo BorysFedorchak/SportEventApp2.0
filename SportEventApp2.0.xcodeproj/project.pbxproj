@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C42B06992C97230E00BBCE40 /* HomeTextTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C42B06982C97230E00BBCE40 /* HomeTextTVC.xib */; };
+		C42B069B2C97550C00BBCE40 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42B069A2C97550C00BBCE40 /* AddEventVC.swift */; };
+		C42B069E2C9B2F0600BBCE40 /* UserCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C42B069C2C9B2F0600BBCE40 /* UserCoreData.xcdatamodeld */; };
+		C42B06A02C9B341600BBCE40 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42B069F2C9B341600BBCE40 /* CoreDataService.swift */; };
+		C42B06A52C9C711E00BBCE40 /* UserCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42B06A32C9C711E00BBCE40 /* UserCD+CoreDataProperties.swift */; };
+		C42B06B72CA1CF7F00BBCE40 /* SportEventCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42B06B32CA1CF7F00BBCE40 /* SportEventCD+CoreDataProperties.swift */; };
+		C42B06BD2CA1D54C00BBCE40 /* EventImageCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42B06BB2CA1D54C00BBCE40 /* EventImageCD+CoreDataProperties.swift */; };
 		C457B18F2C7623BE00F195F8 /* HomeEventsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C457B18E2C7623BE00F195F8 /* HomeEventsTVC.xib */; };
 		C457B1912C7623D200F195F8 /* HomeEventsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B1902C7623D200F195F8 /* HomeEventsTVC.swift */; };
 		C457B1952C76287700F195F8 /* HomeEventsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B1942C76287700F195F8 /* HomeEventsCVC.swift */; };
 		C457B1972C76287E00F195F8 /* HomeEventsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C457B1962C76287E00F195F8 /* HomeEventsCVC.xib */; };
-		C457B19A2C7659DA00F195F8 /* HomeTextTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C457B1992C7659DA00F195F8 /* HomeTextTVC.xib */; };
 		C457B19C2C7659ED00F195F8 /* HomeTextTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B19B2C7659ED00F195F8 /* HomeTextTVC.swift */; };
 		C4679FA52C8A2279005098C5 /* PBackImageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4679FA42C8A2279005098C5 /* PBackImageTVC.swift */; };
 		C4679FA72C8B252C005098C5 /* PTrophiesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4679FA62C8B252C005098C5 /* PTrophiesTVC.swift */; };
@@ -53,11 +59,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C42B06982C97230E00BBCE40 /* HomeTextTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTextTVC.xib; sourceTree = "<group>"; };
+		C42B069A2C97550C00BBCE40 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
+		C42B069D2C9B2F0600BBCE40 /* UserCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserCoreData.xcdatamodel; sourceTree = "<group>"; };
+		C42B069F2C9B341600BBCE40 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		C42B06A32C9C711E00BBCE40 /* UserCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C42B06B32CA1CF7F00BBCE40 /* SportEventCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SportEventCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C42B06BB2CA1D54C00BBCE40 /* EventImageCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventImageCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C457B18E2C7623BE00F195F8 /* HomeEventsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEventsTVC.xib; sourceTree = "<group>"; };
 		C457B1902C7623D200F195F8 /* HomeEventsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventsTVC.swift; sourceTree = "<group>"; };
 		C457B1942C76287700F195F8 /* HomeEventsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventsCVC.swift; sourceTree = "<group>"; };
 		C457B1962C76287E00F195F8 /* HomeEventsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEventsCVC.xib; sourceTree = "<group>"; };
-		C457B1992C7659DA00F195F8 /* HomeTextTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTextTVC.xib; sourceTree = "<group>"; };
 		C457B19B2C7659ED00F195F8 /* HomeTextTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTextTVC.swift; sourceTree = "<group>"; };
 		C4679FA42C8A2279005098C5 /* PBackImageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBackImageTVC.swift; sourceTree = "<group>"; };
 		C4679FA62C8B252C005098C5 /* PTrophiesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTrophiesTVC.swift; sourceTree = "<group>"; };
@@ -98,6 +110,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C42B06A12C9B342500BBCE40 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C42B06B32CA1CF7F00BBCE40 /* SportEventCD+CoreDataProperties.swift */,
+				C42B06BB2CA1D54C00BBCE40 /* EventImageCD+CoreDataProperties.swift */,
+				C42B06A32C9C711E00BBCE40 /* UserCD+CoreDataProperties.swift */,
+				C42B069C2C9B2F0600BBCE40 /* UserCoreData.xcdatamodeld */,
+				C42B069F2C9B341600BBCE40 /* CoreDataService.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		C457B1922C76284000F195F8 /* HomeCVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +202,7 @@
 				C4AFD8D22C72408D00DB6225 /* Cells */,
 				C4AFD8DA2C724B2E00DB6225 /* Extensions.swift */,
 				C4679FB02C8F3D6D005098C5 /* CircularProgressView.swift */,
+				C42B06A12C9B342500BBCE40 /* CoreData */,
 				C4AFD8B42C6CF9DF00DB6225 /* VC */,
 				C4AFD8AB2C68F61A00DB6225 /* Main.storyboard */,
 				C4AFD8A02C68F5F800DB6225 /* Assets.xcassets */,
@@ -190,10 +215,11 @@
 		C4AFD8B42C6CF9DF00DB6225 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				C4AFD8B22C6CF9D700DB6225 /* SingUpVC.swift */,
-				C4AFD8C12C6F8A9300DB6225 /* HomeVC.swift */,
-				C48B90912C88806700E3518E /* SingInVC.swift */,
 				C4F42B512C89E9C000F51E12 /* ProfileVC.swift */,
+				C42B069A2C97550C00BBCE40 /* AddEventVC.swift */,
+				C4AFD8B22C6CF9D700DB6225 /* SingUpVC.swift */,
+				C48B90912C88806700E3518E /* SingInVC.swift */,
+				C4AFD8C12C6F8A9300DB6225 /* HomeVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -205,7 +231,7 @@
 				C4AFD8C82C722CF200DB6225 /* HomeImageTVC.swift */,
 				C4AFD8CC2C723CBD00DB6225 /* HomeCollectionTVC.xib */,
 				C4AFD8CE2C723CDD00DB6225 /* HomeCollectionTVC.swift */,
-				C457B1992C7659DA00F195F8 /* HomeTextTVC.xib */,
+				C42B06982C97230E00BBCE40 /* HomeTextTVC.xib */,
 				C457B19B2C7659ED00F195F8 /* HomeTextTVC.swift */,
 				C457B18E2C7623BE00F195F8 /* HomeEventsTVC.xib */,
 				C457B1902C7623D200F195F8 /* HomeEventsTVC.swift */,
@@ -304,7 +330,7 @@
 				C4AFD8C72C722CDE00DB6225 /* HomeImageTVC.xib in Resources */,
 				C457B18F2C7623BE00F195F8 /* HomeEventsTVC.xib in Resources */,
 				C4AFD8D52C7240C000DB6225 /* HomeCVC.xib in Resources */,
-				C457B19A2C7659DA00F195F8 /* HomeTextTVC.xib in Resources */,
+				C42B06992C97230E00BBCE40 /* HomeTextTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +341,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42B069B2C97550C00BBCE40 /* AddEventVC.swift in Sources */,
 				C4AFD8B32C6CF9D700DB6225 /* SingUpVC.swift in Sources */,
 				C4AFD89C2C68F5F700DB6225 /* ViewController.swift in Sources */,
 				C4F42B522C89E9C000F51E12 /* ProfileVC.swift in Sources */,
 				C4679FA52C8A2279005098C5 /* PBackImageTVC.swift in Sources */,
+				C42B06BD2CA1D54C00BBCE40 /* EventImageCD+CoreDataProperties.swift in Sources */,
 				C4AFD8C22C6F8A9300DB6225 /* HomeVC.swift in Sources */,
 				C457B1912C7623D200F195F8 /* HomeEventsTVC.swift in Sources */,
 				C4AFD8C92C722CF200DB6225 /* HomeImageTVC.swift in Sources */,
 				C4AFD8DB2C724B2E00DB6225 /* Extensions.swift in Sources */,
+				C42B069E2C9B2F0600BBCE40 /* UserCoreData.xcdatamodeld in Sources */,
+				C42B06B72CA1CF7F00BBCE40 /* SportEventCD+CoreDataProperties.swift in Sources */,
 				C4679FA72C8B252C005098C5 /* PTrophiesTVC.swift in Sources */,
 				C457B1952C76287700F195F8 /* HomeEventsCVC.swift in Sources */,
 				C4AFD8982C68F5F700DB6225 /* AppDelegate.swift in Sources */,
@@ -331,9 +361,11 @@
 				C4AFD89A2C68F5F700DB6225 /* SceneDelegate.swift in Sources */,
 				C4679FA92C8C84BF005098C5 /* PTrophiesCVC.swift in Sources */,
 				C4AFD8CF2C723CDD00DB6225 /* HomeCollectionTVC.swift in Sources */,
+				C42B06A52C9C711E00BBCE40 /* UserCD+CoreDataProperties.swift in Sources */,
 				C457B19C2C7659ED00F195F8 /* HomeTextTVC.swift in Sources */,
 				C48B90922C88806700E3518E /* SingInVC.swift in Sources */,
 				C4679FB12C8F3D6D005098C5 /* CircularProgressView.swift in Sources */,
+				C42B06A02C9B341600BBCE40 /* CoreDataService.swift in Sources */,
 				C4679FAD2C8DDC83005098C5 /* PHistoryTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,6 +600,19 @@
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C42B069C2C9B2F0600BBCE40 /* UserCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C42B069D2C9B2F0600BBCE40 /* UserCoreData.xcdatamodel */,
+			);
+			currentVersion = C42B069D2C9B2F0600BBCE40 /* UserCoreData.xcdatamodel */;
+			path = UserCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C4AFD88C2C68F5F700DB6225 /* Project object */;
 }
