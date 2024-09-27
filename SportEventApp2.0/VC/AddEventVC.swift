@@ -179,6 +179,26 @@ extension AddEventVC {
         print("-------------😀---------------")
     }
     
+    //MARK: - SetupCD()
+//
+//    private func setupRealm() {
+//        let service = RealmService.shared
+//        
+//        guard let name = eventNameTF.text, !name.isEmpty,
+//              let descriptionn = descriptionTextView.text, !descriptionn.isEmpty,
+//              let date = dateTextField.text, !date.isEmpty else {
+//            return
+//        }
+//        
+//        let imageDataArray = selectedImages.compactMap { $0.pngData() }
+//        
+//        service.saveNewEvent(name: name, descriptionn: descriptionn, date: Date(), images: imageDataArray)
+//        
+//        print("-------------😀---------------")
+//        service.getEvents().forEach { print($0) }
+//        print("-------------😀---------------")
+//    }
+    
     // MARK: - Setup Methods
     
     private func setupTapGesture() {

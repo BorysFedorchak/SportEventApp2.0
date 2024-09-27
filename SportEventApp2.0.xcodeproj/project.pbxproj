@@ -14,6 +14,9 @@
 		C42B06A52C9C711E00BBCE40 /* UserCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42B06A32C9C711E00BBCE40 /* UserCD+CoreDataProperties.swift */; };
 		C42B06B72CA1CF7F00BBCE40 /* SportEventCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42B06B32CA1CF7F00BBCE40 /* SportEventCD+CoreDataProperties.swift */; };
 		C42B06BD2CA1D54C00BBCE40 /* EventImageCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42B06BB2CA1D54C00BBCE40 /* EventImageCD+CoreDataProperties.swift */; };
+		C42B06C72CA6F41B00BBCE40 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C42B06C62CA6F41B00BBCE40 /* Realm */; };
+		C42B06C92CA6F41B00BBCE40 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C42B06C82CA6F41B00BBCE40 /* RealmSwift */; };
+		C42B06CD2CA6F46A00BBCE40 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42B06CC2CA6F46A00BBCE40 /* RealmService.swift */; };
 		C457B18F2C7623BE00F195F8 /* HomeEventsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C457B18E2C7623BE00F195F8 /* HomeEventsTVC.xib */; };
 		C457B1912C7623D200F195F8 /* HomeEventsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B1902C7623D200F195F8 /* HomeEventsTVC.swift */; };
 		C457B1952C76287700F195F8 /* HomeEventsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457B1942C76287700F195F8 /* HomeEventsCVC.swift */; };
@@ -66,6 +69,7 @@
 		C42B06A32C9C711E00BBCE40 /* UserCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C42B06B32CA1CF7F00BBCE40 /* SportEventCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SportEventCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C42B06BB2CA1D54C00BBCE40 /* EventImageCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventImageCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C42B06CC2CA6F46A00BBCE40 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		C457B18E2C7623BE00F195F8 /* HomeEventsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEventsTVC.xib; sourceTree = "<group>"; };
 		C457B1902C7623D200F195F8 /* HomeEventsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventsTVC.swift; sourceTree = "<group>"; };
 		C457B1942C76287700F195F8 /* HomeEventsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventsCVC.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42B06C92CA6F41B00BBCE40 /* RealmSwift in Frameworks */,
+				C42B06C72CA6F41B00BBCE40 /* Realm in Frameworks */,
 				C4AFD8BA2C6D2B0500DB6225 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +126,14 @@
 				C42B069F2C9B341600BBCE40 /* CoreDataService.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C42B06CA2CA6F43000BBCE40 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				C42B06CC2CA6F46A00BBCE40 /* RealmService.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 		C457B1922C76284000F195F8 /* HomeCVC */ = {
@@ -203,6 +217,7 @@
 				C4AFD8DA2C724B2E00DB6225 /* Extensions.swift */,
 				C4679FB02C8F3D6D005098C5 /* CircularProgressView.swift */,
 				C42B06A12C9B342500BBCE40 /* CoreData */,
+				C42B06CA2CA6F43000BBCE40 /* Realm */,
 				C4AFD8B42C6CF9DF00DB6225 /* VC */,
 				C4AFD8AB2C68F61A00DB6225 /* Main.storyboard */,
 				C4AFD8A02C68F5F800DB6225 /* Assets.xcassets */,
@@ -276,6 +291,8 @@
 			name = SportEventApp2.0;
 			packageProductDependencies = (
 				C4AFD8B92C6D2B0500DB6225 /* SnapKit */,
+				C42B06C62CA6F41B00BBCE40 /* Realm */,
+				C42B06C82CA6F41B00BBCE40 /* RealmSwift */,
 			);
 			productName = SportEventApp2.0;
 			productReference = C4AFD8942C68F5F700DB6225 /* SportEventApp2.0.app */;
@@ -307,6 +324,7 @@
 			mainGroup = C4AFD88B2C68F5F700DB6225;
 			packageReferences = (
 				C4AFD8B82C6D2B0500DB6225 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C42B06C52CA6F41B00BBCE40 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = C4AFD8952C68F5F700DB6225 /* Products */;
 			projectDirPath = "";
@@ -354,6 +372,7 @@
 				C42B069E2C9B2F0600BBCE40 /* UserCoreData.xcdatamodeld in Sources */,
 				C42B06B72CA1CF7F00BBCE40 /* SportEventCD+CoreDataProperties.swift in Sources */,
 				C4679FA72C8B252C005098C5 /* PTrophiesTVC.swift in Sources */,
+				C42B06CD2CA6F46A00BBCE40 /* RealmService.swift in Sources */,
 				C457B1952C76287700F195F8 /* HomeEventsCVC.swift in Sources */,
 				C4AFD8982C68F5F700DB6225 /* AppDelegate.swift in Sources */,
 				C4679FAF2C8DE9DF005098C5 /* PStatsTVC.swift in Sources */,
@@ -583,6 +602,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C42B06C52CA6F41B00BBCE40 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		C4AFD8B82C6D2B0500DB6225 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -594,6 +621,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C42B06C62CA6F41B00BBCE40 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C42B06C52CA6F41B00BBCE40 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		C42B06C82CA6F41B00BBCE40 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C42B06C52CA6F41B00BBCE40 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		C4AFD8B92C6D2B0500DB6225 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C4AFD8B82C6D2B0500DB6225 /* XCRemoteSwiftPackageReference "SnapKit" */;
